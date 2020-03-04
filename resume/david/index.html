@@ -1,429 +1,328 @@
 <!doctype html>
 <html>
 	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
+
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+
 	<title>David Aizenberg</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
+
+	<style>
+	body {
+  background: #EEEEEE;
+  font: 12px "Times New Roman", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
 }
 em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
+  color: #999;
 }
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
+p {
+  line-height: 1.4;
 }
-.container {
-	max-width: 750px;
-	padding: 0 30px;
+ul {
+  margin-bottom: 0;
 }
-.col-sm-6 {
-	margin-bottom: 10px;
+li {
+  margin-bottom: 2px;
 }
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+a {
+  text-decoration: none;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
+#resume {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
 }
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
+
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
 }
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+
+.largeFont {
+  font-size: 20px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.sectionBlock {
+  display: flex;
+  width: 100%;
+}
+
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+
+.sectionContent .title {
+  font-weight: bold;
+}
+
+.sectionContent .date {
+  float: right;
+}
+
+.sectionContent .separator {
+  height: 14px;
+}
+
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-top: 6px;
+}
+
+.skillBlock {
+  margin-bottom: 4px;
+}
+
+.jobBlock {
+  page-break-inside: avoid;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  a {
+    color: black;
+  }
 }
 
 	</style>
-	
+
 	</head>
 	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						David Aizenberg
-					</h1>
-					<h2>
-						DevOps Engineer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">david@aizenberg.co.uk</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+37068179798</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://aizenberg.co.uk">http://aizenberg.co.uk</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>Solution oriented engineer with hands on approach, uncompromising will to learn and “can do” attitude.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/davidaizenberg/">David Aizenberg</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						GitHub
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/neoromantique/">neoromantique</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      David Aizenberg,
+    </span>
+    <span class='label'>DevOps Engineer</span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>david@aizenberg.co.uk</span>
+      <span class='divider'>|</span>
+      <span class='phone'>+37068179798</span>
+        <span class='divider'>|</span>
+        <span class='address'>
+          Manchester, United Kingdom
+        </span>
+    </div>
+      <div id='profilesBlock'>
+            <span class='url'>
+              <a href='https://www.linkedin.com/in/davidaizenberg/'>https://www.linkedin.com/in/davidaizenberg/</a>
+            </span>
+            <span class='divider'>|</span>
+            <span class='url'>
+              <a href='https://github.com/neoromantique/'>https://github.com/neoromantique/</a>
+            </span>
+            
+      </div>
+  </div>
+  <div class='sectionLine'></div>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>&quot;E-Farm&quot; GmbH</span>
-					<span class="date">
-						2016-02-01 — 2020-01-31
-					</span>
-				</h4>
-				<div class="position">
-					Software Developer / DevOps Engineer
-				</div>
-				<div class="summary">
-					<p>Development and on-going support of various internal applications, assembly and management of a remote team</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Assessment and evaluation of code and architecture</li>
-					<li class="bullet">Introduction of various workflow improvements(Code reviews, version control, automation)</li>
-					<li class="bullet">Troubleshooting and on-going performance optimization</li>
-					<li class="bullet">Breaking up of a monolithic application into lean microservice based architecture</li>
-					<li class="bullet">On-premise and cloud infrastructure maintenance</li>
-					<li class="bullet">Live User data migration from legacy apps onto a new stack</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>&quot;Analytic Dashboards&quot; GmbH</span>
-					<span class="date">
-						2015-03-01 — 2015-08-01
-					</span>
-				</h4>
-				<div class="position">
-					Software Developer
-				</div>
-				<div class="summary">
-					<p>Development of Software as a Service product.  Including choice of technology stack, platform, setting up infrastructure, and developing new features.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Full Stack Development of SaaS product with MEAN Stack and Meteor framework</li>
-					<li class="bullet">Automation</li>
-					<li class="bullet">Code Reviews and management of two working students</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>UAB &quot;JT Company&quot;</span>
-					<span class="date">
-						2014-01-01 — 2014-12-31
-					</span>
-				</h4>
-				<div class="position">
-					System Administrator
-				</div>
-				<div class="summary">
-					<p>Deployment and maintenance of servers, personal computers and peripheral devices.  On-going maintenance, upgrades and deployments of client servers and workstations, including Linux, Windows and Mac OS X workstations and Linux, Windows servers.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">On-going maintenance, updates and assistance with Linux, Windows and Mac OS X workstations</li>
-					<li class="bullet">Deployment and maintenance of Linux Servers</li>
-					<li class="bullet">Education and implementation of basic security measures, such as firewalls, private networks</li>
-					<li class="bullet">Configuration of Network Equipment</li>
-					<li class="bullet">Component level electronics repair</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionContent'>
+      <span>DevOps Engineer with six years of technical experience, which incudes in-depth technical knowledge of Linux based servers. Extensive hands-on experience with building robust and scalable systems &amp; automation.</span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
 
-	
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Linux</h4>
-				</div>
-				<ul class="keywords">
-					<li>Software Management and Packaging (deb packages, snapcraft, init systems)</li>
-					<li>Application building pipelines (npm, pip, makefile)</li>
-					<li>CI/CD and Configuration Management (CircleCI, Drone.io, Ansible)</li>
-					<li>Troubleshooting and Tracing (ftrace, strace, tcpdump, perf)</li>
-					<li>Containers and Orchestration(docker, docker-compose, lxd)</li>
-					<li>Load Balancing and Caching Proxies (nginx, haproxy, traefik)</li>
-					<li>Log and dump analysis (awk, sed, grep)</li>
-					<li>Cloud Computing (aws, opennebula)</li>
-					<li>Scripting (bash, python)</li>
-					<li>Logging (timber, loggly)</li>
-				</ul>
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          &quot;E-Farm&quot; GmbH, Software Developer / DevOps Engineer
+	        </span>
+	        <span class='date'>
+	          2016-02-01 &mdash; 2020-01-31
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Development and support of various internal applications, management of a remote team</li>
+	        <li>Introduction of modern software development practices into the team workflow</li>
+	        <li>Troubleshooting and performance optimization</li>
+	        <li>Breaking up of a monolithic application into lean microservice based architecture</li>
+	        <li>On premise and cloud infrastructure maintenance</li>
+	        <li>CI/CD &amp; Misc automation</li>
+	      </ul>
+	      <div class='separator'></div>
 			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Software Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Software development(NodeJS, Python)</li>
-					<li>Version Control (git)</li>
-					<li>Message Brokers (kafka, rabbitmq)</li>
-					<li>On-going support and maintenance of legacy code bases (php, js, python) </li>
-					<li>Databases (mongodb, mysql)</li>
-				</ul>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          &quot;Analytic Dashboards&quot; GmbH, Software Developer
+	        </span>
+	        <span class='date'>
+	          2015-03-01 &mdash; 2015-08-01
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Development of Software as a Service product. Including choice of technology stack, platform, setting up infrastructure, and developing new features</li>
+	        <li>Full Stack Development of SaaS product with MEAN Stack and Meteor framework</li>
+	        <li>Automated provisioning with Ansible</li>
+	        <li>Code Reviews and management of working students</li>
+	      </ul>
+	      <div class='separator'></div>
 			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          UAB &quot;JT Company&quot;, System Administrator
+	        </span>
+	        <span class='date'>
+	          2014-01-01 &mdash; 2014-12-31
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Deployment and maintenance of servers, personal computers and peripheral devices</li>
+	        <li>Ongoing maintenance, updates and assistance with Linux, Windows and Mac OS X workstations</li>
+	        <li>Deployment and maintenance of Linux Servers</li>
+	        <li>Introduction and implementation of basic security measures, such as firewalls, private networks</li>
+	        <li>Configuration of Network Equipment</li>
+	        <li>Component level electronics repair</li>
+	      </ul>
+	      
 			</div>
-		</div>
-	</section>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Russian</strong>
-				</div>
-				<div class="fluency">
-					Native Speaker
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Fluent
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Lithuanian</strong>
-				</div>
-				<div class="fluency">
-					Advanced
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
 
-	
 
+
+
+	<div id='skills' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SKILLS</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='skillBlock'>
+        <span class='title'>Linux:</span>
+          <span>Software Management and Packaging (deb packages, snapcraft, init systems)</span>, 
+          <span>CI/CD and Configuration Management (CircleCI, Drone.io, Ansible)</span>, 
+          <span>Troubleshooting and Tracing (ftrace, strace, tcpdump, perf)</span>, 
+          <span>Containers and Orchestration (docker, docker-compose, lxd, terraform)</span>, 
+          <span>Load Balancing and Caching Proxies (nginx, haproxy, traefik)</span>, 
+          <span>Log and dump analysis (awk, sed, grep)</span>, 
+          <span>Cloud Computing (aws ec2/s3/cf/eks/ecr)</span>, 
+          <span>Scripting (bash, python)</span>, 
+          <span>Logging (timber, loggly)</span>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Software Development:</span>
+          <span>Software development (NodeJS, Python)</span>, 
+          <span>Version Control (git)</span>, 
+          <span>Message Brokers (kafka, rabbitmq)</span>, 
+          <span>On-going support and maintenance of legacy code bases (php, js, python) </span>, 
+          <span>Databases (mongodb, mysql)</span>
+      </div>
+    </div>
 	</div>
-	
+  <div class='sectionLine'></div>
+
+	<div id='languages' class="sectionBlock">
+    <div class='sectionName'>
+      <span>LANGUAGES</span>
+    </div>
+    <div class='sectionContent'>
+      <span class='language'>English</span>
+      <span class='fluency'><em>(Fluent)</em></span>
+      <span>,</span>
+      <span class='language'>Russian</span>
+      <span class='fluency'><em>(Fluent)</em></span>
+      <span>,</span>
+      <span class='language'>Lithuanian</span>
+      <span class='fluency'><em>(Advanced)</em></span>
+      
+    </div>
+    <div class='sectionLine'></div>
+	</div>
+
+
 	</body>
 </html>
