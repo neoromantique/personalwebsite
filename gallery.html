@@ -35,10 +35,7 @@
                   $('#gallery').append(`<p> ${album.desc} </p>`)
                   album.photos.map(photo => {
                         let thumb = photo.replace('.jpg', '_thumb.jpg')
-                        $('#gallery').append(`
-                        <a class="gal" href="${photo}">
-                              <img src="${thumb}" alt="photo" width="120px" />
-                        </a>`)
+                        $('#gallery').append(`<a class="gal" href="${photo}"><img src="${thumb}" alt="photo" width="120px" /></a>`)
                   })
             });
             new Luminous(document.querySelector(".gal"));
