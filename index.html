@@ -13,11 +13,13 @@
     <!-- <link href="https://thomasf.github.io/solarized-css/solarized-dark.min.css" rel="stylesheet"> -->
     </link>
     <style>
+        html {
+            /* background-color: #141414;
+            color: rgb(226, 226, 226);  */
+        }
         body {
             margin: 1em;
             font-weight: 600;
-            /* background-color: black;
-      color: white; */
             font-size: 0.9em;
             font-family: "Courier New", Courier, monospace;
             padding-bottom: 2em;
@@ -29,7 +31,9 @@
         
         img {
             -khtml-user-select: none;
-            -o-user-select: none;
+            -o-user-select: none;            /* background-color: #141414;
+            color: rgb(226, 226, 226);  */
+
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
@@ -44,24 +48,25 @@
 
 <body>
     <main class="term">
+        <a href="mailto:consulting@aizenberg.lt?subject=Hi! Let's talk!">AD: Available for consulting</a>
         <p>
             ~$ feh images/david.jpg
         </p>
         <div class="portrait">
-            <img src="images/david.jpg" width="150px" alt="my pretty face" draggable="false">
+            <img src="images/david.jpg" width="150px" alt="my pretty^W face" draggable="false">
         </div> ^C
         <p>
             ~$ cat intro.txt
         </p>
-        Hello, I'm David.
+        <p style="max-width: 512px;">Hi, I'm Dave!  
+        This is my tiny piece of the internet that I host from the comfort of my home; There are few public services offered at the time, but more is to be added soon.</p>
         <p>
             ~$ ls social/
         </p>
         <a href="https://www.facebook.com/neo.romantique">facebook/David Aizenberg</a>
         <a href="https://telegram.me/neoromantique/">telegram/@neoromantique</a>
         <a href="https://uk.linkedin.com/in/davidaizenberg/">linkedin/David Aizenberg</a>
-        <a href="https://www.last.fm/user/neo_romantique/">lastfm/neo_romantique</a>
-        <a href="https://bandcamp.com/neoromantique/">bandcamp/neoromantique</a>
+        <!-- <a href="https://www.last.fm/user/neo_romantique/">lastfm/neo_romantique</a> -->
         <p>
             ~$ ls resume/
         </p>
@@ -69,19 +74,20 @@
         <p>
             ~$ ls projects/
         </p>
-        <a href="https://github.com/neoromantique/todoist-integration-for-wip">github/todoist-integration-for-wip</a> -> Todoist integration for a portal <br />
-        <a href="https://github.com/neoromantique/Ocklet">github/Ocklet</a> -> Simple image gallery <br />
         <a href="https://github.com/neoromantique/dotfiles">github/dotfiles</a> -> Linux dotfiles <br />
-        <a href="https://github.com/neoromantique/jsonresume-theme-mint">github/jsonresume-theme-mint</a> <br />
-        <a href="gallery.html">Photography</a> -> Photo Gallery
+        <a href="https://github.com/neoromantique/Ocklet">github/Ocklet</a> -> Simple image gallery <br />
+        <a href="https://snippets.aizenberg.co.uk">Snippets</a> -> Snippets/Tips and Tricks <br />
+        <a href="gallery.html">Photography</a> -> Photo Gallery <br />
+        <a href="https://homelab.lt">Homelab</a> -> Home Lab
         <p>
             ~$ ls -l blog/
         </p>
         <a href="blog/helloworld/index.html">drwxr-xr-x 4 david david 128 Jan 25 02:20 helloworld/</a> <br />
-        <a href="blog/vinyl_collection/index.html">drwxr-xr-x 1 david david  38 Mar  7 21:11 vinyl_collection/</a> <a href="blog/vinyl_collection/vinyl.csv">[CSV]</a>
+        <a href="blog/vinyl_collection/index.html">drwxr-xr-x 1 david david  38 Mar  7 21:11 vinyl_collection/</a>
         <p>
-            ~$ <span class="blink">_</span>
+            ~$ _
         </p>
+    
 
     </div>
 </body>

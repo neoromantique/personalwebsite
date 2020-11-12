@@ -1,441 +1,341 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title></title>
-<meta http-equiv="Content-Style-Type" content="text/css">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
 
-<style type="text/css"><!--
-  body {
-      margin: 1em;
-      font-weight: 600;
-      /* background-color: black;
-color: white; */
-      font-size: 0.9em;
-      font-family: "Courier New", Courier, monospace;
-      padding-bottom: 2em;
-  }
-/* ========== Text Styles ========== */
-hr { color: #000000}
-body, table /* Normal text */
-{
- font-size: 10pt;
- font-family: 'Courier New';
- font-style: normal;
- font-weight: normal;
- color: #000000;
- text-decoration: none;
-}
-span.rvts1 /* Heading */
-{
- font-family: 'Arial';
- font-weight: bold;
- color: #0000ff;
-}
-span.rvts2 /* Subheading */
-{
- font-family: 'Arial';
- font-weight: bold;
- color: #000080;
-}
-span.rvts3 /* Keywords */
-{
- font-family: 'Arial';
- font-style: italic;
- color: #800000;
-}
-a.rvts4, span.rvts4 /* Jump 1 */
-{
- color: #008000;
- text-decoration: underline;
-}
-a.rvts5, span.rvts5 /* Jump 2 */
-{
- font-family: 'Arial';
- color: #008000;
- text-decoration: underline;
-}
-/* ========== Para Styles ========== */
-p,ul,ol /* Paragraph Style */
-{
- text-align: left;
- text-indent: 0px;
- font-weight: 200;
+    <style type="text/css">
+      <!--
+        body {
+            margin: 1em;
+            font-weight: 600;
+            /* background-color: black;
+      color: white; */
+            font-size: 0.9em;
+            font-family: "Courier New", Courier, monospace;
+            padding-bottom: 2em;
+        }
+      /* ========== Text Styles ========== */
+      hr { color: #000000}
+      body, table /* Normal text */
+      {
+       font-size: 10pt;
+       font-family: 'Courier New';
+       font-style: normal;
+       font-weight: normal;
+       color: #000000;
+       text-decoration: none;
+      }
+      span.rvts1 /* Heading */
+      {
+       font-family: 'Arial';
+       font-weight: bold;
+       color: #0000ff;
+      }
+      span.rvts2 /* Subheading */
+      {
+       font-family: 'Arial';
+       font-weight: bold;
+       color: #000080;
+      }
+      span.rvts3 /* Keywords */
+      {
+       font-family: 'Arial';
+       font-style: italic;
+       color: #800000;
+      }
+      a.rvts4, span.rvts4 /* Jump 1 */
+      {
+       color: #008000;
+       text-decoration: underline;
+      }
+      a.rvts5, span.rvts5 /* Jump 2 */
+      {
+       font-family: 'Arial';
+       color: #008000;
+       text-decoration: underline;
+      }
+      /* ========== Para Styles ========== */
+      p,ul,ol /* Paragraph Style */
+      {
+       text-align: left;
+       text-indent: 0px;
+       font-weight: 200;
 
- padding: 0px 0px 0px 0px;
- margin: 0px 0px 0px 0px;
-}
-.rvps1 /* Centered */
-{
- text-align: center;
-}
---></style>
-<style data-styled="" data-styled-version="4.4.1"></style></head>
-<body><link type="text/css" rel="stylesheet" href="index_files/content_script.css">
+       padding: 0px 0px 0px 0px;
+       margin: 0px 0px 0px 0px;
+      }
+      .rvps1 /* Centered */
+      {
+       text-align: center;
+      }
+      -->
+    </style>
+    <style data-styled="" data-styled-version="4.4.1"></style>
+  </head>
+  <body>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="index_files/content_script.css"
+    />
 
-<p><br></p>
-<div><table style="background-color: #ffffff;" width="100%" cellspacing="2" cellpadding="1" border="1">
-<tbody><tr valign="top">
-<td style="border-style: inset;">
-<p><span class="rvts1">Artist</span></p>
-</td>
-<td style="border-style: inset;">
-<p><span class="rvts1">Title</span></p>
-</td>
-<td style="border-style: inset;">
-<p><span class="rvts1">Released</span></p>
-</td>
-<td style="border-style: inset;">
-<p><span class="rvts1">release_id</span></p>
-</td>
-<td style="border-style: inset;">
-<p><span class="rvts1">Date Added</span></p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>The Police</p>
-</td>
-<td style="border-style: inset;">
-<p>Reggatta De Blanc</p>
-</td>
-<td style="border-style: inset;">
-<p>1980</p>
-</td>
-<td style="border-style: inset;">
-<p>367741</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:01:36</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>The Alan Parsons Project</p>
-</td>
-<td style="border-style: inset;">
-<p>The Turn Of A Friendly Card</p>
-</td>
-<td style="border-style: inset;">
-<p>1981</p>
-</td>
-<td style="border-style: inset;">
-<p>780154</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:00:45</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>The Alan Parsons Project</p>
-</td>
-<td style="border-style: inset;">
-<p>Pyramid</p>
-</td>
-<td style="border-style: inset;">
-<p>1978</p>
-</td>
-<td style="border-style: inset;">
-<p>721783</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:55:22</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Laura Branigan</p>
-</td>
-<td style="border-style: inset;">
-<p>Self Control</p>
-</td>
-<td style="border-style: inset;">
-<p>1984</p>
-</td>
-<td style="border-style: inset;">
-<p>6029951</p>
-</td>
-<td style="border-style: inset;">
-<p>2019-08-27 02:21:02</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Billy Idol</p>
-</td>
-<td style="border-style: inset;">
-<p>Cyberpunk</p>
-</td>
-<td style="border-style: inset;">
-<p>1993</p>
-</td>
-<td style="border-style: inset;">
-<p>1011162</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:03:03</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Daft Punk</p>
-</td>
-<td style="border-style: inset;">
-<p>Random Access Memories</p>
-</td>
-<td style="border-style: inset;">
-<p>2013</p>
-</td>
-<td style="border-style: inset;">
-<p>4570366</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:54:23</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Alina Orlova</p>
-</td>
-<td style="border-style: inset;">
-<p>Laukinis Šuo Dingo</p>
-</td>
-<td style="border-style: inset;">
-<p>2018</p>
-</td>
-<td style="border-style: inset;">
-<p>12745081</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:56:43</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Pink Floyd</p>
-</td>
-<td style="border-style: inset;">
-<p>Animals</p>
-</td>
-<td style="border-style: inset;">
-<p>1977</p>
-</td>
-<td style="border-style: inset;">
-<p>768254</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:54:50</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Jean-Michel Jarre</p>
-</td>
-<td style="border-style: inset;">
-<p>Oxygene</p>
-</td>
-<td style="border-style: inset;">
-<p>2015</p>
-</td>
-<td style="border-style: inset;">
-<p>7597701</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:56:26</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Tears For Fears</p>
-</td>
-<td style="border-style: inset;">
-<p>The Hurting</p>
-</td>
-<td style="border-style: inset;">
-<p>1983</p>
-</td>
-<td style="border-style: inset;">
-<p>612348</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:00:20</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>The Beatles</p>
-</td>
-<td style="border-style: inset;">
-<p>Abbey Road</p>
-</td>
-<td style="border-style: inset;">
-<p>1986</p>
-</td>
-<td style="border-style: inset;">
-<p>1850509</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:58:29</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Deep Purple</p>
-</td>
-<td style="border-style: inset;">
-<p>Perfect Strangers</p>
-</td>
-<td style="border-style: inset;">
-<p>1984</p>
-</td>
-<td style="border-style: inset;">
-<p>2160003</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:55:38</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Vangelis</p>
-</td>
-<td style="border-style: inset;">
-<p>Heaven And Hell</p>
-</td>
-<td style="border-style: inset;">
-<p>1982</p>
-</td>
-<td style="border-style: inset;">
-<p>1228211</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:56:06</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Gary Moore</p>
-</td>
-<td style="border-style: inset;">
-<p>Still Got The Blues</p>
-</td>
-<td style="border-style: inset;">
-<p>1990</p>
-</td>
-<td style="border-style: inset;">
-<p>3417793</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:01:13</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Linkin Park</p>
-</td>
-<td style="border-style: inset;">
-<p>Reanimation</p>
-</td>
-<td style="border-style: inset;">
-<p>2016</p>
-</td>
-<td style="border-style: inset;">
-<p>8604990</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:59:37</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Van Halen</p>
-</td>
-<td style="border-style: inset;">
-<p>Van Halen</p>
-</td>
-<td style="border-style: inset;">
-<p>1978</p>
-</td>
-<td style="border-style: inset;">
-<p>2751644</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:59:16</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Linkin Park</p>
-</td>
-<td style="border-style: inset;">
-<p>Hybrid Theory</p>
-</td>
-<td style="border-style: inset;">
-<p>2013</p>
-</td>
-<td style="border-style: inset;">
-<p>5150478</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 11:00:00</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>The Beatles</p>
-</td>
-<td style="border-style: inset;">
-<p>Love Songs</p>
-</td>
-<td style="border-style: inset;">
-<p>1982</p>
-</td>
-<td style="border-style: inset;">
-<p>662841</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:58:05</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Paul McCartney</p>
-</td>
-<td style="border-style: inset;">
-<p>Снова В СССР</p>
-</td>
-<td style="border-style: inset;">
-<p>1989</p>
-</td>
-<td style="border-style: inset;">
-<p>9753925</p>
-</td>
-<td style="border-style: inset;">
-<p>2020-03-07 10:57:19</p>
-</td>
-</tr>
-<tr valign="top">
-<td style="border-style: inset;">
-<p>Noize MC</p>
-</td>
-<td style="border-style: inset;">
-<p>Hard Reboot 3.0</p>
-</td>
-<td style="border-style: inset;">
-<p>2016</p>
-</td>
-<td style="border-style: inset;">
-<p>9973637</p>
-</td>
-<td style="border-style: inset;">
-<p>2018-11-02 03:00:47</p>
-</td>
-</tr>
-</tbody></table>
-</div>
+    <p><br /></p>
+    <div>
+      <table
+        style="background-color: #ffffff;"
+        cellspacing="1"
+        cellpadding="2"
+        border="5"
+      >
+        <tbody>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p><span class="rvts1">Artist</span></p>
+            </td>
+            <td style="border-style: inset;">
+              <p><span class="rvts1">Title</span></p>
+            </td>
+            <td style="border-style: inset;">
+              <p><span class="rvts1">Released</span></p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>The Police</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Reggatta De Blanc</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1980</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>The Alan Parsons Project</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>The Turn Of A Friendly Card</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1981</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>The Alan Parsons Project</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Pyramid</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1978</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Laura Branigan</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Self Control</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1984</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Billy Idol</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Cyberpunk</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1993</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Daft Punk</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Random Access Memories</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2013</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Alina Orlova</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Laukinis Šuo Dingo</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2018</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Pink Floyd</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Animals</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1977</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Jean-Michel Jarre</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Oxygene</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2015</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Tears For Fears</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>The Hurting</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1983</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>The Beatles</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Abbey Road</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1986</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Deep Purple</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Perfect Strangers</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1984</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Vangelis</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Heaven And Hell</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1982</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Gary Moore</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Still Got The Blues</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1990</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Linkin Park</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Reanimation</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2016</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Van Halen</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Van Halen</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1978</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Linkin Park</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Hybrid Theory</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2013</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>The Beatles</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Love Songs</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1982</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Paul McCartney</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Снова В СССР</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>1989</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td style="border-style: inset;">
+              <p>Noize MC</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>Hard Reboot 3.0</p>
+            </td>
+            <td style="border-style: inset;">
+              <p>2016</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-
-<div class="memex-ribbon-sidebar-container" id="memex-ribbon-sidebar-container"></div><div id="memex-direct-linking-tooltip"><div class="memex-tooltip-container"></div></div></body></html>
-<br /> <br />
+    <div
+      class="memex-ribbon-sidebar-container"
+      id="memex-ribbon-sidebar-container"
+    ></div>
+    <div id="memex-direct-linking-tooltip">
+      <div class="memex-tooltip-container"></div>
+    </div>
+  </body>
+</html>
+<br />
+<br />
 <p>
-    <a href="../../index.html">Back.</a>
+  <a href="../../index.html">Back.</a>
 </p>
