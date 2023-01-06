@@ -3,53 +3,43 @@
 
 <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+      <script src="/assets/js/photoswipe.umd.min.js"></script>
+      <script src="/assets/js/photoswipe-lightbox.umd.min.js"></script>
+
+      <link rel="stylesheet" href="/assets/css/photoswipe.css">
 </head>
 
 <body>
-      <div id="gallery">
-
-      </div>
+      <div id="gallery"></div>
       <p>
             <a href="index.html">Back.</a>
       </p>
       <script>
-            let photos = [{
-                  title: "Walk with dogo ~ 25 March 2020",
-                  desc: "Just some snaps from the evening walk",
-                  photos: ["https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5297.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5330.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5344.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5351.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5368.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5370.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5375.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5379.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5387.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5396.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5399.jpg",
-                        "https://f003.backblazeb2.com/file/neoPublicBkt/Photos/walk25march/NEO_5400.jpg"]
-            }];
-            photos.map(album => {
-                  $('#gallery').append(`<h3> ${album.title} </h3>`)
-                  $('#gallery').append(`<p> ${album.desc} </p>`)
-                  album.photos.map(photo => {
-                        let thumb = photo.replace('.jpg', '_thumb.jpg')
-                        $('#gallery').append(`<a class="gal" href="${photo}" style="padding-right: 5px;"><img src="${thumb}" alt="photo" width="120px" /></a>`)
-                  })
-            });
-            new Luminous(document.querySelector(".gal"));
-            new LuminousGallery(
-                  document.querySelectorAll(".gal"),
-                  {
-                        arrowNavigation: false
-                  },
-                  {
-                        caption: function (trigger) {
-                              return trigger.querySelector("img").getAttribute("alt");
-                        }
-                  }
-            );
+            async function main() {
+                  const photos = await fetch('photos.json')
+                        .then(response => response.json())
+                  photos.sort((a, b) => b.date.localeCompare(a.date))
+                  photos.map(album => {
+                        $('#gallery').append(`<h3> ${album.title} </h3> ${album.date}`)
+                        $('#gallery').append(`<p> ${album.desc} </p>`)
+                        album.photos.map(photo => {
+                              $('#gallery').append(`<a href="${photo.url}" 
+                              data-pswp-width="${photo.width}" 
+                              data-pswp-height="${photo.height}" 
+                              target="_blank">
+                              <img height="128px" src="${photo.thumb}" alt="" />
+                              </a>`)
+                              // $('#gallery').append(`<a class="gal" href="${photo}" style="padding-right: 5px;"><img src="${thumb}" alt="photo" width="120px" /></a>`)
+                        })
+                  });
+                  const lightbox = new PhotoSwipeLightbox({
+                        gallery: '#gallery',
+                        children: 'a',
+                        pswpModule: PhotoSwipe
+                        });
+                        lightbox.init();
+                    }
+            main(0)
       </script>
 </body>
 
