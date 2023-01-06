@@ -1,6 +1,5 @@
 import json
 from feedgen.feed import FeedGenerator
-from termcolor import colored
 import os
 
 # CONSTANTS
@@ -50,16 +49,14 @@ def generate_feed(blogItems: list) -> None:
 
 if __name__ == "__main__":
     blogItems = list_blog_entries()
-    print(colored('CI Helper 9000', 'red'), '::',
-          colored('Listing blog entries', 'white'))
+    print('-- Blog Entries:')
     for blogItem in blogItems:
-        print(colored(blogItems[blogItem].get('kind'),
-              'green'), colored(blogItem, 'white'))
-    print(colored('', 'red'), '::', colored('Generating dynamic blog entries', 'white'), end=" " )
-    print(colored('[Not implemented]', 'red'))
+        print(f"{blogItems[blogItem].get('kind')}: {blogItems[blogItem].get('title')}")
+
     # for blogItem in blogItems:
     #     generate_blog_entry(blogItem)
 
-    print(colored('', 'red'), '::', colored('Generating ATOM feed', 'white'), end=" " )
+    print(f"-- Generating ATOM feed", end=" ")
     generate_feed(blogItems)
-    print(colored('[Done]', 'green'))
+    print("Done")
+
