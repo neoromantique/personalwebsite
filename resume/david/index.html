@@ -10,7 +10,7 @@
 	<style>
 	body {
   background: #EEEEEE;
-  font: 12px "Times New Roman", Times, sans-serif;
+  font: 13px "Times New Roman", Times, sans-serif;
   line-height: 1.4;
   margin: 40px 0;
 }
@@ -51,7 +51,7 @@ a {
 }
 
 .smallFont {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .sectionBlock {
@@ -127,6 +127,9 @@ a {
     padding: 0.5em 1em;
     border: none;
   }
+  .sectionBlock {
+    flex-direction: column;
+  }
   .sectionContent {
     width: 100%;
   }
@@ -145,6 +148,9 @@ a {
 }
 
 @media print {
+  body {
+    background: #FFFFFF;
+  }
   #resume {
     margin: 0 auto;
     max-width: 600px;
@@ -182,15 +188,15 @@ a {
     </div>
       <div id='profilesBlock'>
             <span class='url'>
-              <a href='https://www.aizenberg.co.uk/'>https://www.aizenberg.co.uk/</a>
+              <a href='https://www.aizenberg.co.uk/'>Personal Website</a>
             </span>
             <span class='divider'>|</span>
             <span class='url'>
-              <a href='https://www.linkedin.com/in/davidaizenberg/'>https://www.linkedin.com/in/davidaizenberg/</a>
+              <a href='https://www.linkedin.com/in/davidaizenberg/'>LinkedIn</a>
             </span>
             <span class='divider'>|</span>
             <span class='url'>
-              <a href='https://github.com/neoromantique/'>https://github.com/neoromantique/</a>
+              <a href='https://github.com/neoromantique/'>GitHub</a>
             </span>
             
       </div>
