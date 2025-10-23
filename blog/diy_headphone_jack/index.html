@@ -1,194 +1,453 @@
-<!DOCTYPE html>
+<!doctype html>
 <html prefix="og: https://ogp.me/ns#" lang="en">
+    <!--
+    Hand Crafted HTML like it is 1999, yo^WWWW
+    Scratch that, hand-crafted html was replaced by soulless LLM generated code in 2025.
 
-<!-- 
-    Hand Crafted HTML like it is 1999, yo
-    No quality assurances, no warranty, no guarantees
--->
+    Looks similar, but neater.
 
-<head>
-    <meta charset="utf-8">
-    <title>David Aizenberg</title>
+    Still, no quality assurances, no warranty, no guarantees, we're all gonna die.
+    -->
 
-    <!-- Primary Meta Tags -->
-    <title>Modding the Beyerdynamic DT770 Cable into a RCA Jacks</title>
-    <meta name="title" content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks">
-    <meta name="description" content="Straight Outta World Wide Web">
-    <meta name="image" content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png">
-    <meta name="author" content="David Aizenberg">
-    <meta name="date" content="2022-07-16">
+    <head>
+        <meta charset="utf-8" />
+        <title>David Aizenberg</title>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.aizenberg.co.uk/blog/diy_headphone_jack/index.html">
-    <meta property="og:title" content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks">
-    <meta property="og:description" content="Straight Outta World Wide Web">
-    <meta property="og:image" content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png">
+        <!-- Primary Meta Tags -->
+        <title>Modding the Beyerdynamic DT770 Cable into a RCA Jacks</title>
+        <meta
+            name="title"
+            content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks"
+        />
+        <meta name="description" content="Straight Outta World Wide Web" />
+        <meta
+            name="image"
+            content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png"
+        />
+        <meta name="author" content="David Aizenberg" />
+        <meta name="date" content="2022-07-16" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.aizenberg.co.uk/blog/diy_headphone_jack/index.html">
-    <meta property="twitter:title" content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks">
-    <meta property="twitter:description" content="Straight Outta World Wide Web">
-    <meta property="twitter:image" content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://www.aizenberg.co.uk/blog/diy_headphone_jack/index.html"
+        />
+        <meta
+            property="og:title"
+            content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks"
+        />
+        <meta
+            property="og:description"
+            content="Straight Outta World Wide Web"
+        />
+        <meta
+            property="og:image"
+            content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png"
+        />
 
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <style>
-        /* unvisited link */
-        a:link {
-            color: red;
-        }
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://www.aizenberg.co.uk/blog/diy_headphone_jack/index.html"
+        />
+        <meta
+            property="twitter:title"
+            content="Modding the Beyerdynamic DT770 Cable into a RCA Jacks"
+        />
+        <meta
+            property="twitter:description"
+            content="Straight Outta World Wide Web"
+        />
+        <meta
+            property="twitter:image"
+            content="https://public.gtw.lt/file/airgap/GnaJOotYJ2LeJ2a5kbcExBXz.png"
+        />
 
-        /* visited link */
-        a:visited {
-            color: green;
-        }
+        <link rel="icon" type="image/png" href="images/favicon.ico" />
+        <style>
+            /* === ZINE AESTHETICS: 1990s UNDERGROUND TECH === */
 
-        /* mouse over link */
-        a:hover {
-            color: rebeccapurple;
-        }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        /* selected link */
-        a:active {
-            color: blue;
-        }
+            body {
+                background-color: #0a0a0a;
+                color: #d0d0d0;
+                font-family: "Courier New", Courier, monospace;
+                font-size: 14px;
+                line-height: 1.7;
+                letter-spacing: 0.3px;
+                padding: 20px;
+            }
 
-        body {
-            background-color: #000;
-            color: #fff;
-            font-weight: 600;
-            font-size: 0.9em;
-            font-family: "Courier New", Courier, monospace;
-            padding-bottom: 2em;
-        }
+            /* === LINKS === */
+            a {
+                text-decoration: none;
+                border-bottom: 1px dotted;
+                transition: all 0.2s;
+            }
+            a:link {
+                color: #ff6b6b;
+                border-color: #ff6b6b;
+            }
+            a:visited {
+                color: #95e1d3;
+                border-color: #95e1d3;
+            }
+            a:hover {
+                color: #ffd93d;
+                border-color: #ffd93d;
+                background-color: rgba(255, 217, 61, 0.1);
+            }
+            a:active {
+                color: #a8e6cf;
+                border-color: #a8e6cf;
+            }
 
-        p {
-            font-weight: 200;
-            width: 400px;
-        }
+            /* === CONTAINER === */
+            .container {
+                max-width: 1100px;
+                margin: 0;
+                background-color: #0f0f0f;
+                border: 3px solid #2a2a2a;
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+            }
 
-        img {
-            -khtml-user-select: none;
-            -o-user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
+            /* === HEADER === */
+            .header {
+                background-color: #1a1a1a;
+                border-bottom: 2px solid #3a3a3a;
+                padding: 25px 30px;
+            }
 
-        .left {
-            float: left;
-        }
+            .back-link {
+                display: inline-block;
+                margin-bottom: 15px;
+                font-size: 13px;
+            }
 
-        .right {
-            float: right;
-        }
-    </style>
+            h2 {
+                font-size: 28px;
+                color: #ffd93d;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+            }
 
-</head>
+            h4 {
+                font-size: 12px;
+                color: #888;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
 
-<body>
-    <a href="../../index.html">Back.</a>
+            /* === CONTENT === */
+            .content {
+                padding: 0;
+            }
 
-    <h2> Beyerdynamic DT770 Cable mod </h2>
-    <h4> Sat Jul 16 03:35:37 EEST 2022 </h4>
-    <div style="width: 1100px; left: 0px;">
-        <div>
-            <img src="https://public.gtw.lt/file/airgap/ajGOhECRofIgHHxBv9nwQdFr.jpeg" width="600px" alt="DT770"
-                class="right">
-            <p class="left" style="margin-top: 30px; margin-left: 30px">
-                It's frustrating when a perfectly good pair of headphones has to be retired due to a damaged cable.
-                <br />
-                I have found myself in that situation once too often, when the cable in my trusty Beyerdynamics has once
-                again failed. <br /> <br />
-                So I decided to seek for a way to make the problem go away for good: I decided to mod the cable into a
-                RCA jack. <br /> <br />
-                Why did I decide to use RCA? Many people recommended using obscure connectors to achieve balanced
-                output,
-                but I had no experience with that and my hardware didn't support it. <br /> <br />
+            /* === TEXT BLOCKS === */
+            .text-block {
+                background-color: #151515;
+                padding: 20px 25px;
+                margin: 0;
+                border-left: 3px solid #ff6b6b;
+            }
 
-                So, I ultimately decided
-                to stick with the tried-and-true RCA plug.
-            </p>
-            <img src="https://public.gtw.lt/file/airgap/zZMQMdodOf6GnBVyYUXNR7g0.jpeg" width="600px" alt="DT770"
-                class="left">
-            <p class="right" style="margin-right: 40px;">
-                <br />
-                Disassembly was a simple process. <br />
-                Just a matter of unscrewing couple of screws and pulling the "shell" apart, to be precise. <br /><br />
-                The cable itself is a simple 3-wire cable, that goes from one ear to the other over a headband.
-                <br /><br />
+            .text-block p {
+                margin: 0;
+                max-width: 100%;
+            }
 
-                As I have decided to use RCA plugs, which are mono traditionally, I didn't need the wire going over from
-                one ear to the other, so I cut it off. <br /><br />
-                instead I widened a hole in the shell where old cable was, and soldered the RCA plug in place. <br />
-                <br />
+            .text-block-alt {
+                background-color: #1a1520;
+                border-left: 3px solid #95e1d3;
+            }
 
-                On the other side I have guesstimated the bottom of the shell, and just made a matching hole for another
-                RCA jack. <br />
-            </p>
+            .text-block-note {
+                background-color: #1a1515;
+                border-left: 3px solid #666;
+                color: #888;
+            }
 
+            /* === IMAGES === */
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border: 2px solid #3a3a3a;
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+            }
 
-            <div style="width: 550px; height: 700px; overflow: hidden; margin: none;" class="left"> <img
-                    src="https://public.gtw.lt/file/airgap/gPM6Ny7h0Os0u8PuBJAR0nKw.jpg" width="550px" alt="DT770">
+            .img-full {
+                width: 100%;
+                margin: 0;
+            }
+
+            .img-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0;
+            }
+
+            .img-grid img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .img-row {
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 0;
+            }
+
+            .img-row img {
+                flex: 1;
+                height: auto;
+                object-fit: cover;
+            }
+
+            /* === FLOAT LAYOUTS === */
+            .float-layout {
+                overflow: auto;
+                padding: 20px 25px;
+                background-color: #151515;
+            }
+
+            .float-left {
+                float: left;
+                margin-right: 25px;
+                margin-bottom: 15px;
+                max-width: 55%;
+            }
+
+            .float-right {
+                float: right;
+                margin-left: 25px;
+                margin-bottom: 15px;
+                max-width: 55%;
+            }
+
+            .float-left img,
+            .float-right img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* === UTILITY === */
+            .clear {
+                clear: both;
+            }
+
+            .spacer {
+                height: 0;
+                clear: both;
+            }
+
+            /* === FOOTER === */
+            .footer {
+                background-color: #1a1a1a;
+                border-top: 2px solid #3a3a3a;
+                padding: 20px 30px;
+                text-align: left;
+            }
+
+            /* === RESPONSIVE TYPOGRAPHY === */
+            p {
+                margin-bottom: 12px;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+                <a href="../../index.html" class="back-link">&lt;&lt; BACK</a>
+                <h2>Beyerdynamic DT770 Cable mod</h2>
+                <h4>Sat Jul 16 03:35:37 EEST 2022</h4>
             </div>
 
-            <div style="width: 550px; height: 350px; overflow: hidden; margin: none;" class="right"> <img
-                    src="https://public.gtw.lt/file/airgap/k80Da6AWfzqRNJFuS6YSzaIx.jpg" width="550px" alt="DT770">
+            <!-- CONTENT -->
+            <div class="content">
+                <!-- INTRO: Image with floating text -->
+                <div class="float-layout">
+                    <div class="float-right">
+                        <img
+                            src="https://public.gtw.lt/file/airgap/ajGOhECRofIgHHxBv9nwQdFr.jpeg"
+                            alt="Beyerdynamic DT770 headphones"
+                        />
+                    </div>
+                    <p>
+                        It's frustrating when a perfectly good pair of
+                        headphones has to be retired due to a damaged cable. I
+                        have found myself in that situation once too often, when
+                        the cable in my trusty Beyerdynamics has once again
+                        failed.
+                    </p>
+                    <p>
+                        So I decided to seek for a way to make the problem go
+                        away for good: I decided to mod the cable into a RCA
+                        jack.
+                    </p>
+                    <p>
+                        Why did I decide to use RCA? Many people recommended
+                        using obscure connectors to achieve balanced output, but
+                        I had no experience with that and my hardware didn't
+                        support it.
+                    </p>
+                    <p>
+                        So, I ultimately decided to stick with the
+                        tried-and-true RCA plug.
+                    </p>
+                </div>
+
+                <!-- DISASSEMBLY: Image with floating text (alt style) -->
+                <div class="float-layout text-block-alt">
+                    <div class="float-left">
+                        <img
+                            src="https://public.gtw.lt/file/airgap/zZMQMdodOf6GnBVyYUXNR7g0.jpeg"
+                            alt="Disassembled headphone"
+                        />
+                    </div>
+                    <p>
+                        Disassembly was a simple process. Just a matter of
+                        unscrewing couple of screws and pulling the "shell"
+                        apart, to be precise.
+                    </p>
+                    <p>
+                        The cable itself is a simple 3-wire cable, that goes
+                        from one ear to the other over a headband.
+                    </p>
+                    <p>
+                        As I have decided to use RCA plugs, which are mono
+                        traditionally, I didn't need the wire going over from
+                        one ear to the other, so I cut it off.
+                    </p>
+                    <p>
+                        Instead I widened a hole in the shell where old cable
+                        was, and soldered the RCA plug in place.
+                    </p>
+                    <p>
+                        On the other side I have guesstimated the bottom of the
+                        shell, and just made a matching hole for another RCA
+                        jack.
+                    </p>
+                </div>
+
+                <!-- IMAGE GRID: 3 photos in creative composition -->
+                <div class="img-grid">
+                    <img
+                        src="https://public.gtw.lt/file/airgap/gPM6Ny7h0Os0u8PuBJAR0nKw.jpg"
+                        alt="Headphone internals"
+                        style="grid-row: 1 / 3"
+                    />
+                    <img
+                        src="https://public.gtw.lt/file/airgap/k80Da6AWfzqRNJFuS6YSzaIx.jpg"
+                        alt="RCA jack detail"
+                    />
+                    <img
+                        src="https://public.gtw.lt/file/airgap/QVqxwLhVqWEItMDyalmCPcvB.jpg"
+                        alt="Cable modification"
+                    />
+                </div>
+
+                <!-- TEXT BLOCK -->
+                <div class="text-block">
+                    <p>
+                        The process of modding the cables turned out to be
+                        easier than expected, with only one minor hitch along
+                        the way: The plug I chose was a bit too large, and
+                        wouldn't fit in the speaker with it in place.
+                    </p>
+                </div>
+
+                <!-- SIDE BY SIDE IMAGES -->
+                <div class="img-row">
+                    <img
+                        src="https://public.gtw.lt/file/airgap/kfDC8YbihLfDRrsGlBhweyXi.jpeg"
+                        alt="Modified headphone cup"
+                    />
+                    <img
+                        src="https://public.gtw.lt/file/airgap/L5ZGGZdNmX9U7QRxRXmw0nXA.jpg"
+                        alt="RCA jack installed"
+                    />
+                </div>
+
+                <!-- TEXT BLOCK ALT -->
+                <div class="text-block text-block-alt">
+                    <p>
+                        The solution however was simple, because it torqued
+                        pretty well into the shell, and very obviously had more
+                        than enough leverage on the nut, I decided to use the
+                        Dremel and chip away some of the metal on the nut, after
+                        which it all fit wonderfully.
+                    </p>
+                </div>
+
+                <!-- FULL WIDTH IMAGE -->
+                <div class="img-full">
+                    <img
+                        src="https://public.gtw.lt/file/airgap/aZXo4s4MBa8ZgjjckfmeWFiZ.jpeg"
+                        alt="Completed modification"
+                    />
+                </div>
+
+                <!-- FINAL IMAGES SIDE BY SIDE -->
+                <div class="img-row">
+                    <img
+                        src="https://public.gtw.lt/file/airgap/gjVK8wtidhg79Vl9Fz1V8Bek.jpeg"
+                        alt="Left ear cup"
+                    />
+                    <img
+                        src="https://public.gtw.lt/file/airgap/A2IsKXAtZJsPqLZsnGG59rp0.jpeg"
+                        alt="Right ear cup"
+                    />
+                </div>
+
+                <!-- CONCLUSION -->
+                <div class="text-block">
+                    <p>
+                        It was a quick and easy fix that allowed me not only to
+                        restore my headphones to full functionality, but also
+                        breathe new life into them.
+                    </p>
+                    <p>
+                        No more adapters necessary when switching between my
+                        PC's 6.3mm jack and my portable player's 3.5mm jack.
+                    </p>
+                    <p>
+                        These Beyerdynamics are back in daily rotation, and it's
+                        all thanks to a simple cable mod.
+                    </p>
+                </div>
+
+                <!-- NOTE -->
+                <div class="text-block text-block-note">
+                    <p>
+                        P.S. Not showing the soldering, nothing glorious to see
+                        there, sorry.
+                    </p>
+                </div>
             </div>
 
-            <div style="width: 550px; height: 350px; overflow: hidden; margin: none;" class="right"> <img
-                    src="https://public.gtw.lt/file/airgap/QVqxwLhVqWEItMDyalmCPcvB.jpg" width="550px" alt="DT770">
+            <!-- FOOTER -->
+            <div class="footer">
+                <a href="../../index.html">&lt;&lt; BACK TO INDEX</a>
             </div>
-
-
-            <p class="left" style=" width: 400px; margin-left: 30px; margin-top: 30px;">
-                The process of modding the cables turned out to be easier than expected, with only one minor hitch along
-                the way: <br />
-                &nbsp The plug I chose was a bit too large, and wouldn't fit in the speaker with it in place. <br />
-                <br />
-            </p>
-            <div style="width: 550px; height: 700px; overflow: hidden; margin: none;" class="right"> <img
-                    src="https://public.gtw.lt/file/airgap/L5ZGGZdNmX9U7QRxRXmw0nXA.jpg" width="550px" alt="DT770">
-            </div>
-
-            <div style="width: 550px; height: 700px; overflow: hidden; margin: none;" class="left"> <img
-                    src="https://public.gtw.lt/file/airgap/kfDC8YbihLfDRrsGlBhweyXi.jpeg" width="550px" alt="DT770">
-            </div>
-
-            <p class="right" style="width: 400px; margin-right: 120px; margin-top: 20px">
-                The solution however was simple, because it torqued pretty well into the shell,
-                and very obviously had more than enough leverage on the nut, I decided to use
-                the Dremel and chip away some of the metal on the nut, after which it all fit wonderfully.
-            </p>
-            <div style="width: 1100px; height: 700px; overflow: hidden; margin: none;" class="left"> <img
-                    src="https://public.gtw.lt/file/airgap/aZXo4s4MBa8ZgjjckfmeWFiZ.jpeg" width="1100px" alt="DT770">
-            </div>
-
-            <div style="width: 550px; height: 700px; overflow: hidden; margin: none;" class="left"> <img
-                    src="https://public.gtw.lt/file/airgap/gjVK8wtidhg79Vl9Fz1V8Bek.jpeg" width="550px" alt="DT770">
-            </div>
-
-            <div style="width: 550px; height: 700px; overflow: hidden; margin: none;" class="right"> <img
-                    src="https://public.gtw.lt/file/airgap/A2IsKXAtZJsPqLZsnGG59rp0.jpeg" width="550px" alt="DT770">
-            </div>
-
-            <p class="left" style="padding-bottom: 150px">
-                It was a quick and easy fix that allowed me not only to restore my headphones to full functionality, but
-                also breathe new life into them. <br />
-                No more adapters necessary when switching between my PC's 6.3mm jack and my portable player's 3.5mm
-                jack. <br /> <br />
-                These Beyerdynamics are back in daily rotation, and it's all thanks to a simple cable mod. <br />
-            </p>
-
-            <p class="right" style="color: #505050; padding-bottom: 150px;">
-                P.S Not showing the soldering, nothing glorious to see there, sorry.
-            </p>
-
         </div>
-        <a href="../../index.html" style="padding-bottom: 50px; width: 1100px" class="left">Back.</a>
-
-
-</body>
-
+    </body>
 </html>

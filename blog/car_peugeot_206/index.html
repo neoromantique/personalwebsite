@@ -135,10 +135,10 @@
                               // $('#gallery').append(`<a class="gal" href="${photo}" style="padding-right: 5px;"><img src="${thumb}" alt="photo" width="120px" /></a>`)
                         })
                   });
-                  const lightbox = new PhotoSwipeLightbox({
+                  const lightbox = new window.PhotoSwipeLightbox({
                         gallery: '#gallery',
                         children: 'a',
-                        pswpModule: PhotoSwipe
+                        pswpModule: window.PhotoSwipe
                   });
                   lightbox.init();
             }
