@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <title>David Aizenberg</title>
     <meta name="description" content="Home Page of David `neoromantique` Aizenberg">
@@ -10,107 +9,81 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=10">
 
     <link rel="icon" type="image/png" href="images/favicon.ico">
-    <!-- <link href="https://thomasf.github.io/solarized-css/solarized-dark.min.css" rel="stylesheet"> -->
-    </link>
     <style>
-        html {
-            /* background-color: #141414;
-            color: rgb(226, 226, 226);  */
-        }
-         /* unvisited link */
+        /* unvisited link */
         a:link {
-        color: red;
+            color: red;
         }
 
         /* visited link */
         a:visited {
-        color: green;
+            color: green;
         }
 
         /* mouse over link */
         a:hover {
-        color: hotpink;
+            color: hotpink;
         }
 
         /* selected link */
         a:active {
-        color: blue;
-        } 
+            color: blue;
+        }
+
         body {
-            margin: 1em;
+            margin: 0;
+            padding: 2em;
             background-color: #000;
             color: #fff;
             font-weight: 600;
             font-size: 0.9em;
             font-family: "Courier New", Courier, monospace;
-            padding-bottom: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        
-        p {
-            font-weight: 200;
+
+        .container {
+            text-align: center;
         }
-        
+
         img {
             -khtml-user-select: none;
-            -o-user-select: none;            /* background-color: #141414;
-            color: rgb(226, 226, 226);  */
-
+            -o-user-select: none;
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
         }
-        
-        .term {
-            margin: 4em;
+
+        p {
+            font-weight: 200;
+            margin: 1.5em 0;
+        }
+
+        .links {
+            margin-top: 2em;
+        }
+
+        .links a {
+            display: block;
+            margin: 0.5em 0;
         }
     </style>
-
 </head>
 
 <body>
-    <main class="term">
-        <a href="mailto:consulting@aizenberg.co.uk?subject=Hi! Let's talk!">AD: Available for consulting</a>
-        <p>
-            ~$ feh images/david.jpg
-        </p>
-        <div class="portrait">
-            <img src="images/david.gif" width="150px" alt="my pretty^W face" draggable="false">
-        </div> ^C
-        <p>
-            ~$ cat intro.txt
-        </p>
-        <p style="max-width: 512px;">Hi, I'm Dave!  
-        This is my tiny piece of the internet that I host from the comfort of my home; There are few public services offered at the time, but more is to be added soon.</p>
-        <p>
-            ~$ ls social/
-        </p>
-        <a href="https://www.facebook.com/neo.romantique">facebook/David Aizenberg</a>
-        <a href="https://telegram.me/neoromantique/">telegram/@neoromantique</a>
-        <a href="https://uk.linkedin.com/in/davidaizenberg/">linkedin/David Aizenberg</a>
-        <!-- <a href="https://www.last.fm/user/neo_romantique/">lastfm/neo_romantique</a> -->
-        <p>
-            ~$ ls resume/
-        </p>
-        <a href="resume/david.pdf">david.pdf</a>
-        <p>
-            ~$ ls links/
-        </p>
-        <a href="https://github.com/neoromantique/dotfiles">github/dotfiles</a> -> Linux dotfiles <br />
-        <a href="https://github.com/neoromantique/memory-lane">Snippets</a> -> Snippets/Tips and Tricks <br />
-        <a href="https://photo.gtw.lt">Photography</a> -> Photo Gallery <br />
-        <p>
-            ~$ ls -l blog/ 
-        </p>
-        <a href="blog/helloworld/index.html">drwxr-xr-x 4 david david 128 Jan 25 2021 02:20 helloworld/</a> <br />
-        <a href="blog/vinyl_collection/index.html">drwxr-xr-x 1 david david  38 Mar  7 2021 21:11 vinyl_collection/</a> <br />
-        <a href="blog/diy_headphone_jack/index.html">drwxr-xr-x 1 david david  38 Jul  16 2022 21:11 Beyerdynamic DT770 NoCable mod/</a> <br />
-        <a href="blog/car_peugeot_206/index.html">drwxr-xr-x 1 david david  38 Jan  06 2023 13:11 [Cars] Peugeot 206 The Rat/</a> <br />
-        <a href="blog/rss.xml">rss.xml</a>
-        <p>
-            ~$ _
-        </p>
-    
+    <div class="container">
+        <img src="images/david.gif" width="150px" alt="my pretty^W face" draggable="false">
 
+        <p>Hi, I'm Dave! This is my tiny piece of the internet.</p>
+
+        <div class="links">
+            <a href="https://www.facebook.com/neo.romantique">facebook</a>
+            <a href="https://telegram.me/neoromantique/">telegram</a>
+            <a href="https://uk.linkedin.com/in/davidaizenberg/">linkedin</a>
+            <a href="resume/david.pdf">CV</a>
+        </div>
     </div>
 </body>
 
